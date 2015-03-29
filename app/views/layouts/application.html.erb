@@ -7,8 +7,27 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+<div id="header">
+  <span id="content">Lingo Hub...network of native language speakers.</span>
+  <div id="mainLinks">
+      <a href="/settings/settings.html.erb">Settings</a> |
+      <a href="/dashboards/index.html.erb">Log in</a>
+  </div>
+</div>
+<br/><br/>
+<hr class="grayRuler"/>
+<div class="navigation">
+<ul id="navigationLinks">
+  <li><a href="/dashboards/index">Home</a></li>
+  <li><a href="/skills/index">Skills</a></li>
+  <li><a href="/goals/index.html.erb">Goals</a></li>
+  <li><a href="/progress/index.html.erb">Progress</a></li>
+  <li><a href="/friends/index.html.erb">Friends</a></li>
+  <li><a href="/favorites/index.html.erb">Favorites</a></li>
+</ul>
+</div>
+<div class="content">
+  <%= yield %>
+</div>
 </body>
 </html>
